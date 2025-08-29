@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+ int count=0;
+class des
+{
+public:
+
+    des()
+    {
+        count++;
+        cout<<"No of objects Created: "<<count<<endl;
+        
+    }
+    ~des()
+    {
+        count--;
+        cout<<"No of objects destroyed: "<<count<<endl;
+    }
+};
+int main()
+{
+    des a1,a2,a3,a4;
+}
