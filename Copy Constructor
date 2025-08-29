@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+class Student
+{
+    int age;
+    string name;
+    public:
+    Student(string n,int a)
+    {
+        name=n;
+        age=a;
+        
+    }
+    Student(const Student &s1)
+    {
+        name=s1.name;
+        age=s1.age;
+    }
+    void disp()
+    {
+        cout<<"Name: "<<name<<endl;
+        cout<<"Age: "<<age;
+    }
+};
+
+int main()
+{
+    Student s1("Varenyam",19);
+    s1.disp();
+    cout<<""<<endl;
+    Student s2=s1;
+    s2.disp();
+    
+}
