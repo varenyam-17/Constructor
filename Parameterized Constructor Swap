@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+class swap1
+{
+    int temp,a,b;
+    public:
+    void disp();
+    swap1(int x,int y)
+    {
+        a=x;
+        b=y;
+        temp=a;
+        a=b;
+        b=temp;
+        
+    }
+};
+void swap1::disp()
+{
+    cout<<a<<endl;
+    cout<<b;
+}
+int main()
+{ int a,b;
+    cout<<"Enter a number: "<<endl;
+    cin>>a;
+    cout<<"Enter a number: "<<endl;
+    cin>>b;
+    swap1 e1(a,b);
+    e1.disp();
+}
