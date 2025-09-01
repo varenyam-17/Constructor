@@ -131,6 +131,32 @@ A constructor is a special member function in C++ that is automatically invoked 
    - Destructor is automatically invoked when object lifetime ends
 
 7. **End**
+   ### Parameterized Constructor Swap:
+   1. **Start**
+
+2. **Define a class**  
+   - Name the class (e.g., `swap1`)  
+   - Declare three private data members: `a`, `b`, and `temp`
+
+3. **Create a parameterized constructor**  
+   - Accept two integer arguments `x` and `y`  
+   - Assign `x` to `a` and `y` to `b`  
+   - Use `temp` to swap the values:
+     - `temp = a`  
+     - `a = b`  
+     - `b = temp`
+
+4. **Define a member function `disp()`**  
+   - Display the values of `a` and `b` after swapping
+
+5. **In `main()` function**  
+   - Declare two integer variables `a` and `b`  
+   - Prompt the user to input values for `a` and `b`  
+   - Create an object of the class using the constructor with `a` and `b`  
+   - Call the `disp()` function to show swapped values
+
+6. **End**
+
 
 ## ✅ Conclusion
 
